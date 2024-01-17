@@ -7,14 +7,14 @@ const Track = (props) => {
         (event) => {
             props.onAdd(props.track);
         },
-        [props.onAdd, props.track]
+        [props]
     );
 
     const removeTrack = useCallback(
         (event) => {
             props.onRemove(props.track);
         },
-        [props.onRemove, props.track]
+        [props]
     );
 
     const renderAction = () => {
